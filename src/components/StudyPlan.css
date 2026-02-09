@@ -1,0 +1,328 @@
+.study-plan {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.plan-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.plan-subtitle {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+.plan-selection {
+  margin-bottom: 28px;
+}
+
+.plan-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.plan-card {
+  border: 2px solid #ecf0f1;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.plan-card:hover {
+  border-color: #5a9fd4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(90, 159, 212, 0.2);
+}
+
+.plan-card.selected {
+  border-color: #5a9fd4;
+  background: linear-gradient(135deg, rgba(90, 159, 212, 0.1) 0%, rgba(123, 184, 232, 0.1) 100%);
+  box-shadow: 0 4px 12px rgba(90, 159, 212, 0.3);
+}
+
+.plan-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.plan-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.plan-tag {
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.plan-card-description {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.plan-card-stats {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.stat-item {
+  flex: 1;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #95a5a6;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.stat-divider {
+  color: #bdc3c7;
+  font-size: 14px;
+}
+
+.selected-plan-details {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.plan-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.overview-item {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.overview-icon {
+  font-size: 28px;
+}
+
+.overview-text {
+  flex: 1;
+}
+
+.overview-label {
+  font-size: 12px;
+  color: #95a5a6;
+  margin-bottom: 4px;
+}
+
+.overview-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.schedule-section {
+  margin-bottom: 24px;
+}
+
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.schedule-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #567357;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.toggle-button:hover {
+  background: rgba(229, 136, 137, 0.15);
+}
+
+.schedule-list {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.schedule-item {
+  display: grid;
+  grid-template-columns: 80px 120px 1fr;
+  gap: 16px;
+  padding: 14px 20px;
+  border-bottom: 1px solid #ecf0f1;
+  transition: background 0.3s ease;
+}
+
+.schedule-item:last-child {
+  border-bottom: none;
+}
+
+.schedule-item:hover {
+  background: #f8f9fa;
+}
+
+.schedule-item.拉伸 {
+  background: rgba(76, 175, 80, 0.05);
+}
+
+.schedule-item.休息 {
+  background: rgba(33, 150, 243, 0.05);
+}
+
+.schedule-time {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+.schedule-activity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.activity-badge {
+  font-size: 16px;
+}
+
+.activity-name {
+  font-weight: 500;
+  color: #34495e;
+  font-size: 14px;
+}
+
+.schedule-details {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.subject {
+  font-weight: 500;
+  color: #5a9fd4;
+  background: rgba(90, 159, 212, 0.15);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.exercises {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.exercise-tag {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.plan-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.action-button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  max-width: 300px;
+}
+
+.action-button.primary {
+  background: linear-gradient(135deg, #5a9fd4 0%, #7bb8e8 100%);
+  color: white;
+}
+
+.action-button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(90, 159, 212, 0.4);
+}
+
+.action-button.secondary {
+  background: white;
+  color: #5a9fd4;
+  border: 2px solid #5a9fd4;
+}
+
+.action-button.secondary:hover {
+  background: rgba(90, 159, 212, 0.1);
+}
+
+@media (max-width: 768px) {
+  .plan-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .plan-actions {
+    flex-direction: column;
+  }
+
+  .action-button {
+    max-width: 100%;
+  }
+}
